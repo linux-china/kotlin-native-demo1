@@ -1,0 +1,4 @@
+headers = math2/math2.h
+compilerOpts = -I.
+staticLibraries = libmath2.a
+libraryPaths = /usr/local/lib
