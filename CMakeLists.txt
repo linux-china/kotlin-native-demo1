@@ -36,6 +36,12 @@ cinterop(
 konanc_executable(
         NAME HelloWorld
         SOURCES src/main/kotlin
-        TEST_SOURCES src/test/kotlin
+        TEST_SOURCES src/test/kotlin/MainTest.kt
+        LIBRARIES common; libmath2
+)
+
+konanc_test(
+        NAME SecondTest
+        SOURCES src/test/kotlin/SecondTest.kt src/main/kotlin
         LIBRARIES common; libmath2
 )
